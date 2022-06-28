@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiga - Tic</title>
+
+    <link rel="icon" href=" {% static 'favicon_io/favicon.ico' %} " type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/jquery-steps/jquery.steps.css' %}">
+    
+
+
+    <link rel="stylesheet" href="{% static 'assets/vendor/animate-css/vivify.min.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap-colorpicker/css/bootstrap-colorpicker.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/multi-select/css/multi-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap-tagsinput/bootstrap-tagsinput.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/nouislider/nouislider.min.css' %}">
+    
+
+
+
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'assets/site.min.css' %}">
+    
+</head>
+<body class="theme-cyan ">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'core:pesan' %}">Booking ?</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br> -->
+      <br>
+      
+    <div class="container">
+      
+      {% block content %}
+        
+      {% endblock content %}
+        
+
+    </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>		
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="{% static 'assets/bundles/libscripts.bundle.js' %}"></script>    
+<script src="{% static 'assets/bundles/vendorscripts.bundle.js' %}"></script>
+
+<script src="{% static 'assets/vendor/jquery-validation/jquery.validate.js' %}"></script><!-- Jquery Validation Plugin Css -->
+<script src="{% static 'assets/vendor/jquery-steps/jquery.steps.js' %}"></script><!-- JQuery Steps Plugin Js -->
+<script src="{% static 'assets/bundles/mainscripts.bundle.js' %}"></script>
+<script src="{% static 'assets/js/pages/forms/form-wizard.js' %}"></script>
+
+
+<script src="{% static 'assets/vendor/bootstrap-colorpicker/js/bootstrap-colorpicker.js' %}"></script><!-- Bootstrap Colorpicker Js --> 
+<script src="{% static 'assets/vendor/jquery-inputmask/jquery.inputmask.bundle.js' %}"></script><!-- Input Mask Plugin Js --> 
+<script src="{% static 'assets/vendor/jquery.maskedinput/jquery.maskedinput.min.js' %}"></script>
+<script src="{% static 'assets/vendor/multi-select/js/jquery.multi-select.js' %}"></script><!-- Multi Select Plugin Js -->
+<script src="{% static 'assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js' %}"></script>
+<script src="{% static 'assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js' %}"></script>
+<script src="{% static 'assets/vendor/bootstrap-tagsinput/bootstrap-tagsinput.js' %}"></script><!-- Bootstrap Tags Input Plugin Js --> 
+<script src="{% static 'assets/vendor/nouislider/nouislider.js' %}"></script><!-- noUISlider Plugin Js -->
+<script src="{% static 'assets/bundles/mainscripts.bundle.js' %}"></script>
+<script src="{% static 'assets/js/pages/forms/advanced-form-elements.js' %}"></script>
+</body>
+</html>
